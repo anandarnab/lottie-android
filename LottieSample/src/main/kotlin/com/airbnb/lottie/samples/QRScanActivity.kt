@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.PointF
 import android.os.Bundle
 import android.os.Vibrator
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.airbnb.lottie.samples.model.CompositionArgs
 import com.dlazaro66.qrcodereaderview.QRCodeReaderView
@@ -25,6 +26,8 @@ class QRScanActivity : AppCompatActivity(), QRCodeReaderView.OnQRCodeReadListene
         qrView.setAutofocusInterval(2000L)
         qrView.setBackCamera()
         qrView.setOnQRCodeReadListener(this)
+        qrView.forceAutoFocus()
+//        qrView.setOnDragListener(View.OnDragListener())
         qrView.setOnClickListener { qrView.forceAutoFocus() }
     }
 

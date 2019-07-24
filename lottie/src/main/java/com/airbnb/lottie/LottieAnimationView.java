@@ -50,7 +50,8 @@ import java.util.Set;
  * You can manually set the progress of the animation with {@link #setProgress(float)} or
  * {@link R.attr#lottie_progress}
  */
-@SuppressWarnings({"unused", "WeakerAccess"}) public class LottieAnimationView extends AppCompatImageView {
+@SuppressWarnings({"unused", "WeakerAccess"})
+public class LottieAnimationView extends AppCompatImageView {
 
   private static final String TAG = LottieAnimationView.class.getSimpleName();
 
